@@ -1,0 +1,79 @@
+*{
+    margin: 0; 
+    padding:0;
+     box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+    .grand_parent{
+         width: 100vw;
+          height:70vh;
+          margin-top: 10vh;
+        color: #fff;
+    }
+    h1{
+        font-size: 4rem;
+        padding: 20px 0;
+        text-align: center;
+        color: red;
+    }
+    h2{
+        text-align: center;
+        margin-top: 30px;
+        color: white;
+        font-size: 200%;
+    }
+    h4{
+        text-align: center;
+        margin-top: 30px;
+        color: white;
+        font-size: 200%;
+    }
+    .parents{ 
+        width: 100vw;
+         height: auto;
+          margin: auto;
+        display: flex;
+          justify-content: space-around;
+        flex-wrap: wrap;
+         transition: all 0.2 linear;
+    }
+    .child{
+        height: 200px;
+        background:#81ecec;
+        box-shadow: 0 0 20px #bac3c3;
+        flex:1 1 200px;
+        margin: 20px;
+    }
+    
+    .child:first-child{
+        background: #ffbe76;
+    }
+    .child:last-child{
+        background: #ff7979;
+    }
+    @media (max-width: 768px){
+        .grand_parent{height:auto; }
+    }
+#deaths{
+    color: red;
+}
+#recovered{
+    color: green;
+}
+#active{
+    color: blue;
+}
+#preventid{
+    color: #000;
+}
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
